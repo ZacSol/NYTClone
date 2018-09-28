@@ -15,9 +15,7 @@ myParam={'api-key': "896f03c63d0346cf8662446f75e726cc",
 
 const makeCall=function(){
     var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
-url += '?' + $.param(
-    myParam
-);
+url += '?' + $.param(myParam);
 $.ajax({
   url: url,
   method: 'GET',
